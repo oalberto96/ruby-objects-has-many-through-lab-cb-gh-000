@@ -8,6 +8,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    genre.songs << self
     @@all << self
   end
 
