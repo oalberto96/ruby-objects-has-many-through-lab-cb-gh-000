@@ -13,6 +13,7 @@ class Patient
 
   def doctors
     result = []
-    @appointments.each{|ap| ap.doctor}
+    @appointments.each{|ap| result << ap.doctor}
+    result
   end
 end
