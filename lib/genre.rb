@@ -1,4 +1,4 @@
-
+require 'pry'
 
 class Genre
   attr_accessor :name, :songs
@@ -12,5 +12,6 @@ class Genre
     result = []
     @songs.each {|song| result << song.genre}
     result
+    binding.pry
   end
 end
