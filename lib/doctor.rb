@@ -12,4 +12,10 @@ class Doctor
 
   end
 
+  def patients
+    result = []
+    @appointments.each{|appointment| result << appointment.patient }
+    result
+  end
+
 end
