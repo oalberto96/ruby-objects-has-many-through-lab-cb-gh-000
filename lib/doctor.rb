@@ -3,7 +3,7 @@
 class Doctor
   attr_accessor :name, :appointments
   @@all = []
-  
+
   def initialize(name)
     @name = name
     @appointments = []
@@ -18,6 +18,10 @@ class Doctor
     result = []
     @appointments.each{|appointment| result << appointment.patient }
     result
+  end
+
+  def self.all 
+    @@all
   end
 
 end
