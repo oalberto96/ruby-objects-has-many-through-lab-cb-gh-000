@@ -14,6 +14,11 @@ class Artist
     song
   end
 
+  def genres
+    result = []
+    @songs.genres
+  end
+
   def self.all
     @@all
   end
