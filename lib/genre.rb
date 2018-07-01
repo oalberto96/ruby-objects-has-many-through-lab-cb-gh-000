@@ -10,7 +10,7 @@ class Genre
 
   def artists
     result = []
-    @songs.each {|song| result << song.genre}
+    @songs.each {|song| result << song.artist}
     result
     binding.pry
   end
