@@ -12,6 +12,5 @@ class Genre
     result = []
     @songs.each {|song| result << song.artist}
     result
-    binding.pry
   end
 end
