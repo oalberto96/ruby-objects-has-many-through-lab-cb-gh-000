@@ -8,5 +8,6 @@ class Appointment
     @patient = patient
     @doctor = doctor
     @date = date
+    @@all << self
   end
 end
