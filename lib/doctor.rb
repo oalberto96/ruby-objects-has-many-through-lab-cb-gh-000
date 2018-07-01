@@ -3,13 +3,13 @@
 class Doctor
   attr_accessor :name, :appointments
 
-  def intialize(name)
+  def initialize(name)
     @name = name
     @appointments = []
   end
 
   def new_appointment
-
+    
   end
 
   def patients
